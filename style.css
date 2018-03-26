@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+a, a:visited, a:focus, a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background: inherit;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+}
+
+button:active, button:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.9fr) minmax(250px, 0.7fr) minmax(125px, 0.4fr);
+  grid-template-rows: 50px 40px;
+  grid-column-gap: 16px;
+  background: red;
+  color: white;
+  font-family: 'Marck Script', cursive;
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+
+.navtext {
+  padding-left: 33px;
+  padding-top: 15px;
+}
+
+.layout {
+  justify-self: end;
+}
+
+
+.fade {
+  grid-column: 1 / 4;
+  background: linear-gradient(red, white);
+}
+
+.container {
+  display: grid;
+  width: 960px;
+  height: 960px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#test {
+  border: 1px solid black;
+}
