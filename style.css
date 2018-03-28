@@ -15,7 +15,7 @@ button {
   border: none;
 }
 
-button:active, button:hover {
+button:active, button:hover, button:visited {
   text-decoration: none;
 }
 
@@ -59,4 +59,9 @@ button:active, button:hover {
 
 #test {
   border: 1px solid black;
+}
+
+.box {
+  background-color: black;
+  opacity: 0;
 }
