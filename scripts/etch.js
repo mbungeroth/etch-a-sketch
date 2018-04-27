@@ -1,4 +1,4 @@
-function createGrid(event, numBoxes=16) {
+function createGrid(numBoxes=16) {
   let columns = `repeat(${numBoxes}, 1fr)`;
   let rows = `repeat(${numBoxes}, 1fr)`;
   container.style.gridTemplateColumns = columns;
@@ -17,16 +17,15 @@ function createGrid(event, numBoxes=16) {
 
 function resetGrid() {
   clearGrid();
-  createGrid(event);
+  createGrid();
 }
 
 
 function chooseGrid() {
   let num = prompt('Please enter a number between 2 and 100');
-
   if (Number(num) >= 2 && Number(num) <= 100) {
     clearGrid();
-    createGrid(event, Number(num));
+    createGrid(Number(num));
   } else {
     alert('Follow directions, yo. Try again.');
   }

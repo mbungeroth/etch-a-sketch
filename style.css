@@ -34,7 +34,8 @@ button:active, button:hover, button:visited {
 
 .navtext {
   padding-left: 33px;
-  padding-top: 15px;
+  padding-top: 8px;
+  z-index: 1;
 }
 
 .layout {
